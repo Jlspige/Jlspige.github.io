@@ -68,10 +68,11 @@
 		  		background-image: url("keyboard.jpg");
 		  		background-repeat: no-repeat;
 		  		background-position: center;
-		  		background-attachment: fixed;
+		  		/*background-attachment: fixed;*/
 		  		background-size: cover;
 		  		position: relative
 			}
+
 			/* about me color: #953C30; */
 			#aboutme {padding-top:80px; padding-bottom:60px; color: #fff; background-color: #EF8354; font-size: x-large;}
 			#projects {padding-top:50px; padding-bottom:60px; padding-left:16vh; padding-right:16vh; color: #fff; background-color: #4F5D75; font-size: x-large;}
@@ -91,6 +92,24 @@
 			a.github:visited {color:#595959;}
 			a.github:hover {color:#6e5494;}
 			/*a.github:hover {color:#2f2f2f;}*/
+
+			@media only screen and (min-width: 992px)
+		  	{
+		  		#home
+		  		{
+		  			background-attachment: fixed;
+		  		}
+		  	}
+
+		  	/*
+		  	@media only screen and (min-width: 450px)
+		  	{
+		  		#signature
+		  		{
+		  			max-width: 400px;
+		  		}
+		  	}
+		  	*/
 
 		</style>
 	</head>
@@ -119,7 +138,7 @@
 
 <div id = "home" class = "container-fluid">
 		<h1 style = "padding-top: 23vh">Joshua Spigelman</h1>
-		<h4 style = "padding-top: 21vh">Senior in Computer Science Engineering</h4>
+		<h4 style = "padding-top: 21vh">Computer Science Engineer</h4>
 		<div style = "position: absolute; left: 0; right: 0; bottom: 2vh; font-size: 40px; opacity: 0.4;" align="center">
 			<span class="glyphicon glyphicon-option-horizontal"></span>
 		</div>
@@ -206,7 +225,7 @@
 		<a class="linkedin" href="https://www.linkedin.com/in/joshua-spigelman-466417a4"><span class="fa fa-linkedin-square" style="font-size: 6vh;"></span></a>
 		<a class="github" href="https://github.com/Jlspige"><span class="fa fa-github-square" style="font-size: 6vh;"</span></a>
 	</div>
-	<img class="img-responsive center-block" src="whiteSignature.png" alt="signature" style="max-width: 400px; padding-top: 20px; padding-bottom: 40px;">
+	<img class="img-responsive center-block" id = "signature" src="whiteSignature400.png" alt="signature" style="padding: 20px 25px 40px 25px">
 </div>
 
 <div id = "end" class = "container-fluid"></div>
