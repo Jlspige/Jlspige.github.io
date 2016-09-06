@@ -93,6 +93,7 @@
 			a.github:hover {color:#6e5494;}
 			/*a.github:hover {color:#2f2f2f;}*/
 
+			/* when the screen becomes fully sized for desktop, enable fixed background */
 			@media only screen and (min-width: 992px)
 		  	{
 		  		#home
@@ -101,11 +102,44 @@
 		  		}
 		  	}
 
+		  	/* when the screen becomes small sized for cell phone, change font and indentation for smaller screen */
 		  	@media only screen and (max-width: 768px)
 		  	{
 		  		h1 
 		  		{
 		  		    font-size: 65px;
+		  		    padding-left: 0px;
+		  		    padding-right: 0px;
+		  		}
+
+		  		h2
+		  		{
+		  			font-size: 50px;
+		  			padding-left: 0px;
+		  		    padding-right: 0px;
+		  		}
+
+		  		#home span
+		  		{
+		  			padding-bottom: 8vh;
+		  		}
+
+		  		#photo
+		  		{
+		  			padding-left: 45px;
+		  			padding-right: 45px;
+		  		}
+
+		  		#aboutme h2
+		  		{
+		  			padding-left: 40px;
+		  		}
+
+		  		#aboutme  p
+		  		{
+		  			font-size: 20px;
+		  			padding-left: 40px;
+		  			padding-right: 40px;
 		  		}
 		  	}
 
@@ -137,7 +171,7 @@
 <div id = "home" class = "container-fluid">
 		<h1 style = "padding-top: 23vh">Joshua Spigelman</h1>
 		<h4 style = "padding-top: 21vh">Computer Science Engineer</h4>
-		<div style = "position: absolute; left: 0; right: 0; bottom: 2vh; font-size: 40px; opacity: 0.4;" align="center">
+		<div id = "option" style = "position: absolute; left: 0; right: 0; bottom: 2vh; font-size: 45px; opacity: 0.4;" align="center">
 			<span class="glyphicon glyphicon-option-horizontal"></span>
 		</div>
 </div>
@@ -145,14 +179,14 @@
 <div id = "aboutme" class = "container-fluid">
 	<div class = "row">
 		<div class = "col-md-1"></div>
-		<div class = "col-md-4 vcenter"><img src="pic.png" class="center-block img-circle img-responsive" alt="Picture" style = "margin: auto;"></div>
+		<div class = "col-md-4 vcenter"><img id = "photo" src="pic.png" class="center-block img-circle img-responsive" alt="Picture" style = "margin: auto;"></div>
 		<div class = "col-md-1"></div>
 		<div class = "col-md-5">
 			<h2 style = "text-align:left;">About</h2>
-			<p>Joshua Spigelman is a computer science engineer who goes to the University of Michigan in Ann Arbor.</p>
-			<p>He was most recently an intern at Delphi Automotive’s Lab in Mountain View, CA where he worked with the autonomous vehicle team. He has also worked with the Electronics and Safety division of Delphi in Auburn Hills, MI.
-			<p>His other work experience includes a summer as a camp counselor at the Jewish Community Center of Metro Detroit, and volunteer work with his high school’s robotics team.</p>
-			<p>In his free time, Joshua performs stand-up comedy with his college group.</p>
+			<p>I am a computer science engineer who goes to the University of Michigan in Ann Arbor.</p>
+			<p>I was most recently an intern at Delphi Automotive’s Lab in Mountain View, CA where I worked with the autonomous vehicle team. I have also worked with the Electronics and Safety division of Delphi in Auburn Hills, MI.
+			<p>My other work experience includes volunteer work with my high school’s robotics team.</p>
+			<p>In my free time, I am a member of an improvisational comedy club that I helped found. I also perform stand-up comedy with my college group.</p>
 		</div>
 		<div class = "col-sm-1"></div>
 	</div>
