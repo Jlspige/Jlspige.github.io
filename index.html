@@ -40,7 +40,13 @@
     			font-size: 45px;
 			}
 
-			h4 
+			h4
+		  	{
+    			text-align: left;
+    			font-size: 35px;
+			}
+
+			h5 
 		  	{
     			text-align: center;
     			font-size: 30px;
@@ -73,11 +79,17 @@
 		  		position: relative
 			}
 
+			#home h1 {padding-top: 23vh;} /* 183px */
+			#home h5 {padding-top: 21vh;}
 			/* about me color: #953C30; */
 			#aboutme {padding-top:50px; padding-bottom:60px; color: #fff; background-color: #EF8354; font-size: x-large;}
 			#aboutme p {padding-right: 110px;}
 			#projects {padding-top:50px; padding-bottom:60px; padding-left:16vh; padding-right:16vh; color: #fff; background-color: #4F5D75; font-size: x-large;}
 			#skills {padding-top:50px; padding-bottom:50px; color: #fff; background-color: #8DAA91;}
+			#skills h4{padding-left: 80px;}
+			#skills .row{text-align: left;}
+			#skills p{font-size: 26px;}
+			#skills span{font-size: 20px;}
 			#connect {padding-top:50px; padding-bottom:25px; color: #fff; background-color: #808080;}
 			#end {padding-top:50px; background-color: #222222;}
 
@@ -122,17 +134,35 @@
 
 		  		#home span
 		  		{
-		  			padding-bottom: 8vh;
+		  			padding-bottom: 12vh;
+		  		}
+
+		  		#home h1
+		  		{
+		  			padding-top: 100px;
+		  		}
+
+		  		#home h5
+		  		{
+		  			padding-top: 5vh;
 		  		}
 
 		  		#photo
 		  		{
-		  			padding-left: 20px;
-		  			padding-right: 20px;
+		  			padding-left: 0px;
+		  			padding-right: 0px;
+		  		}
+
+		  		#aboutme
+		  		{
+		  			padding-top: 80px;
+		  			padding-left: 0px;
+		  			padding-right: 0px;
 		  		}
 
 		  		#aboutme h2
 		  		{
+		  			text-align: center;
 		  			padding-left: 35px;
 		  		}
 
@@ -156,10 +186,30 @@
 		  			padding-right: 35px;
 		  		}
 
-		  		.skillHeader
+		  		#skills h4
 		  		{
+		  			font-size: 27px;
 		  			text-align: center;
-		  			font-size: 5px;
+		  			padding-left: 0px;
+		  			padding-right: 0px;
+		  		}
+
+		  		#skills .row
+		  		{
+		  			text-align: left;
+		  			padding-left: 0px;
+		  			padding-right: 0px;
+		  		}
+
+		  		#skills p
+		  		{
+		  			font-size: 20px;
+		  			text-align: center;
+		  		}
+
+		  		#skills span
+		  		{
+		  			font-size: 17px;
 		  		}
 
 		  		#links
@@ -194,8 +244,8 @@
 </nav>
 
 <div id = "home" class = "container-fluid">
-		<h1 id = "title" style = "padding-top: 23vh">Joshua Spigelman</h1>
-		<h4 style = "padding-top: 21vh">Computer Science Engineer</h4>
+		<h1>Joshua Spigelman</h1>
+		<h5>Computer Science Engineer</h5>
 		<div id = "option" style = "position: absolute; left: 0; right: 0; bottom: 2vh; font-size: 45px; opacity: 0.4;" align="center">
 			<span class="glyphicon glyphicon-option-horizontal"></span>
 		</div>
@@ -236,39 +286,38 @@
 
 <div id = "skills" class = "container-fluid">
 	<h2>Skills</h2>
-	<p class = "skillHeader" style="font-size:35px; padding-left: 80px;">Programming Languages</p>
+	<h4>Programming Languages</h4>
 	<div class="row">
 		<div class="col-sm-2"></div>
-		<!-- old font size was 30px -->
-  		<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>Java</p></div>
-    	<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>C++</p></div>
-    	<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>MATLAB</p></div>
-    	<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>Python</p></div>
+  		<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Java</p></div>
+    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>C++</p></div>
+    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>MATLAB</p></div>
+    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Python</p></div>
     	<div class="col-sm-2"></div>
 	</div>
 	<div class="row">
 		<div class="col-sm-2"></div>
-  		<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>HTML</p></div>
-    	<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>CSS</p></div>
-    	<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>PHP</p></div>
-    	<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>JavaScript</p></div>
+  		<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>HTML</p></div>
+    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>CSS</p></div>
+    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>PHP</p></div>
+    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>JavaScript</p></div>
     	<div class="col-sm-2"></div>
 	</div>
 	<div class="row">
 		<div class="col-sm-2"></div>
-  		<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>Swift</p></div>
-    	<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>Perl</p></div>
-    	<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>C#</p></div>
-    	<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>ARM</p></div>
+  		<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Swift</p></div>
+    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Perl</p></div>
+    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>C#</p></div>
+    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>ARM</p></div>
     	<div class="col-sm-2"></div>
 	</div>
-	<p class = "skillHeader" style="font-size:35px; padding-left: 80px; padding-top: 20px;">Frameworks and Other Programs</p>
+	<h4 style="padding-top: 20px;">Frameworks and Other Programs</h4>
 	<div class="row" style = "padding-bottom: 30px">
 		<div class="col-sm-2"></div>
-  		<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>Unity</p></div>
-    	<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>jMonkeyEngine</p></div>
-    	<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>Blender</p></div>
-    	<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>SolidWorks</p></div>
+  		<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Unity</p></div>
+    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>jMonkeyEngine</p></div>
+    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Blender</p></div>
+    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>SolidWorks</p></div>
     	<div class="col-sm-2"></div>
 	</div>
 </div>
@@ -277,11 +326,11 @@
 	<h3 style = "border-bottom: 4px solid white; width: 50%; margin: auto;">Connect With Me</h3>
 	<p style = "text-align: center; padding-top: 30px; font-size:26px;">Email: js@joshuaspigelman.com</p>
 	<div style = "text-align: center; padding-top: 20px;">
-		<a class="mail" href="mailto:js@joshuaspigelman.com"><span class="fa fa-envelope" style="font-size: 6vh;"></span></a>
-		<a class="linkedin" href="https://www.linkedin.com/in/joshua-spigelman-466417a4"><span class="fa fa-linkedin-square" style="font-size: 6vh;"></span></a>
-		<a class="github" href="https://github.com/Jlspige"><span class="fa fa-github-square" style="font-size: 6vh;"</span></a>
+		<a class="mail" href="mailto:js@joshuaspigelman.com"><i class="fa fa-envelope" style="font-size: 50px;"></i></a>
+		<a class="linkedin" href="https://www.linkedin.com/in/joshua-spigelman-466417a4"><i class="fa fa-linkedin-square" style="font-size: 50px;"></i></a>
+		<a class="github" href="https://github.com/Jlspige"><i class="fa fa-github-square" style="font-size: 50px;"></i></a>
 	</div>
-	<img class="img-responsive center-block" id = "signature" src="whiteSignature400.png" alt="signature" style="padding: 20px 25px 40px 25px">
+	<img class="img-responsive center-block" id = "signature" src="whiteSignature400.png" alt="signature" style="padding: 20px 10px 40px 10px">
 </div>
 
 <div id = "end" class = "container-fluid"></div>
