@@ -74,7 +74,8 @@
 			}
 
 			/* about me color: #953C30; */
-			#aboutme {padding-top:80px; padding-bottom:60px; color: #fff; background-color: #EF8354; font-size: x-large;}
+			#aboutme {padding-top:50px; padding-bottom:60px; color: #fff; background-color: #EF8354; font-size: x-large;}
+			#aboutme p {padding-right: 110px;}
 			#projects {padding-top:50px; padding-bottom:60px; padding-left:16vh; padding-right:16vh; color: #fff; background-color: #4F5D75; font-size: x-large;}
 			#skills {padding-top:50px; padding-bottom:50px; color: #fff; background-color: #8DAA91;}
 			#connect {padding-top:50px; padding-bottom:25px; color: #fff; background-color: #808080;}
@@ -126,20 +127,44 @@
 
 		  		#photo
 		  		{
-		  			padding-left: 45px;
-		  			padding-right: 45px;
+		  			padding-left: 20px;
+		  			padding-right: 20px;
 		  		}
 
 		  		#aboutme h2
 		  		{
-		  			padding-left: 40px;
+		  			padding-left: 35px;
 		  		}
 
 		  		#aboutme  p
 		  		{
 		  			font-size: 20px;
-		  			padding-left: 40px;
-		  			padding-right: 40px;
+		  			padding-left: 35px;
+		  			padding-right: 35px;
+		  		}
+
+		  		#projects
+		  		{
+		  			font-size: 20px;
+		  			padding-left: 35px;
+		  			padding-right: 35px;
+		  		}
+
+		  		#skills
+		  		{
+		  			padding-left: 35px;
+		  			padding-right: 35px;
+		  		}
+
+		  		.skillHeader
+		  		{
+		  			text-align: center;
+		  			font-size: 5px;
+		  		}
+
+		  		#links
+		  		{
+		  			font-size: 20vh;
 		  		}
 		  	}
 
@@ -169,7 +194,7 @@
 </nav>
 
 <div id = "home" class = "container-fluid">
-		<h1 style = "padding-top: 23vh">Joshua Spigelman</h1>
+		<h1 id = "title" style = "padding-top: 23vh">Joshua Spigelman</h1>
 		<h4 style = "padding-top: 21vh">Computer Science Engineer</h4>
 		<div id = "option" style = "position: absolute; left: 0; right: 0; bottom: 2vh; font-size: 45px; opacity: 0.4;" align="center">
 			<span class="glyphicon glyphicon-option-horizontal"></span>
@@ -178,11 +203,10 @@
 
 <div id = "aboutme" class = "container-fluid">
 	<div class = "row">
-		<div class = "col-md-1"></div>
-		<div class = "col-md-4 vcenter"><img id = "photo" src="pic.png" class="center-block img-circle img-responsive" alt="Picture" style = "margin: auto;"></div>
-		<div class = "col-md-1"></div>
-		<div class = "col-md-5">
-			<h2 style = "text-align:left;">About</h2>
+		<div class = "col-md-6 vcenter">
+			<img id = "photo" src="pic.png" class="center-block img-circle img-responsive" alt="Picture" style = "margin: auto; padding-left: 90px; padding-right: 90px;"></div>
+		<div class = "col-md-6">
+			<h2 style = "text-align:left;">About Me</h2>
 			<p>I am a computer science engineer who goes to the University of Michigan in Ann Arbor.</p>
 			<p>I was most recently an intern at Delphi Automotive’s Lab in Mountain View, CA where I worked with the autonomous vehicle team. I have also worked with the Electronics and Safety division of Delphi in Auburn Hills, MI.
 			<p>My other work experience includes volunteer work with my high school’s robotics team.</p>
@@ -212,7 +236,7 @@
 
 <div id = "skills" class = "container-fluid">
 	<h2>Skills</h2>
-	<p style="font-size:35px; padding-left: 80px;">Programming Languages</p>
+	<p class = "skillHeader" style="font-size:35px; padding-left: 80px;">Programming Languages</p>
 	<div class="row">
 		<div class="col-sm-2"></div>
 		<!-- old font size was 30px -->
@@ -238,7 +262,7 @@
     	<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>ARM</p></div>
     	<div class="col-sm-2"></div>
 	</div>
-	<p style="font-size:35px; padding-left: 80px; padding-top: 20px;">Frameworks and Other Programs</p>
+	<p class = "skillHeader" style="font-size:35px; padding-left: 80px; padding-top: 20px;">Frameworks and Other Programs</p>
 	<div class="row" style = "padding-bottom: 30px">
 		<div class="col-sm-2"></div>
   		<div class="col-sm-2"><p style="font-size:26px" class="text-nowrap"><span class="glyphicon glyphicon-minus" style="font-size:20px"></span>Unity</p></div>
