@@ -88,7 +88,7 @@
 			#projects {padding-top:50px; padding-bottom:60px; padding-left:16vh; padding-right:16vh; color: #fff; background-color: #4F5D75; font-size: x-large;}
 			#skills {padding-top:50px; padding-bottom:50px; color: #fff; background-color: #8DAA91;}
 			#skills h4{padding-left: 80px;}
-			#skills .row{text-align: left;}
+			#skills .row{text-align: left; padding-left: 250px; padding-right: 250px;}
 			#skills p{font-size: 26px;}
 			#skills span{font-size: 20px;}
 			#connect {padding-top:50px; padding-bottom:25px; color: #fff; background-color: #808080;}
@@ -113,6 +113,16 @@
 		  		#home
 		  		{
 		  			background-attachment: fixed;
+		  		}
+		  	}
+
+		  	/* when the screen becomes medium sized, make some formatting changes */
+		  	@media only screen and (max-width: 1312px)
+		  	{
+		  		#skills .row
+		  		{
+		  			padding-left: 85px;
+		  			padding-right: 85px;
 		  		}
 		  	}
 
@@ -217,6 +227,30 @@
 		  		}
 		  	}
 
+		  	/* when the screen is the smallest possible size, resize some elements */
+		  	@media only screen and (max-width: 320px)
+		  	{
+		  		h1 
+		  		{
+		  		    font-size: 55px;
+		  		}
+
+		  		h2
+		  		{
+		  			font-size: 40px;
+		  		}
+
+		  		h3
+		  		{
+		  			font-size: 35px;
+		  		}
+
+		  		#skills h4
+		  		{
+		  			font-size: 23px;
+		  		}
+		  	}
+
 		</style>
 	</head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -286,38 +320,30 @@
 	<h2>Skills</h2>
 	<h4>Programming Languages</h4>
 	<div class="row">
-		<div class="col-sm-2"></div>
-  		<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Java</p></div>
-    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>C++</p></div>
-    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>MATLAB</p></div>
-    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Python</p></div>
-    	<div class="col-sm-2"></div>
+  		<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Java</p></div>
+    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>C++</p></div>
+    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>MATLAB</p></div>
+    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Python</p></div>
 	</div>
 	<div class="row">
-		<div class="col-sm-2"></div>
-  		<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>HTML</p></div>
-    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>CSS</p></div>
-    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>PHP</p></div>
-    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>JavaScript</p></div>
-    	<div class="col-sm-2"></div>
+  		<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>HTML</p></div>
+    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>CSS</p></div>
+    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>PHP</p></div>
+    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>JavaScript</p></div>
 	</div>
 	<div class="row">
-		<div class="col-sm-2"></div>
-  		<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Swift</p></div>
-    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Perl</p></div>
-    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>C#</p></div>
-    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>ARM</p></div>
-    	<div class="col-sm-2"></div>
+  		<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Swift</p></div>
+    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Perl</p></div>
+    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>C#</p></div>
+    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>ARM</p></div>
 	</div>
 
 	<h4 style="padding-top: 20px;">Frameworks and Other Programs</h4>
 	<div class="row" style = "padding-bottom: 30px">
-		<div class="col-sm-2"></div>
-  		<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Unity</p></div>
-    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>jMonkeyEngine</p></div>
-    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Blender</p></div>
-    	<div class="col-sm-2"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>SolidWorks</p></div>
-    	<div class="col-sm-2"></div>
+  		<div class="col-md-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Unity</p></div>
+    	<div class="col-md-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>jMonkeyEngine</p></div>
+    	<div class="col-md-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Blender</p></div>
+    	<div class="col-md-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>SolidWorks</p></div>
 	</div>
 </div>
 
