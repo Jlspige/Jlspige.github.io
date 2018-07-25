@@ -1,399 +1,126 @@
-
-
 <!DOCTYPE html>
-<html lang = "en" >
-	<head>
-		<!-- include Bootstrap through MaxCDN -->
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<!-- Latest compiled JavaScript -->
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<!-- Not a default part of Bootstrap, but this allows for social media glyphIcons. Credit to http://fortawesome.github.io/Font-Awesome/icons/#brand -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-		<meta charset = "utf-8">
-		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
-		<title>Joshua Spigelman</title>
-		<style>
-			body
-			{
-		    	position: relative;
-		  	}
-
-		    h1
-		    {
-    			text-align: center;
-    			font-size: 80px;
-			}
-
-			h2
-		  	{
-    			text-align: center;
-    			font-size: 60px;
-			}
-
-			h3
-		  	{
-    			text-align: center;
-    			font-size: 45px;
-			}
-
-			h4
-		  	{
-    			text-align: left;
-    			font-size: 35px;
-			}
-
-			h5
-		  	{
-    			text-align: center;
-    			font-size: 30px;
-			}
-
-			.fa {
-			    font-size: 18px;
-			    margin-right: 7px;
-			    margin-left: 7px;
-			}
-
-			.glyphicon:before {
-  				margin-right: 5px;
-			}
-
-			.btn {
-			    margin: 2px;
-			    margin-bottom: 30px;
-			}
-
-			#home
-			{
-		  		height:100vh;
-		  		color: #fff;
-		  		background-image: url("keyboard.jpg");
-		  		background-repeat: no-repeat;
-		  		background-position: center;
-		  		/*background-attachment: fixed;*/
-		  		background-size: cover;
-		  		position: relative
-			}
-
-			#home h1 {padding-top: 23vh;} /* 183px */
-			#home h5 {padding-top: 21vh;}
-			/* about me color: #953C30; */
-			#aboutme {padding-top:50px; padding-bottom:60px; color: #fff; background-color: #EF8354; font-size: x-large;}
-			#aboutme p {padding-right: 110px;}
-			#photo {padding-left: 90px; padding-right: 90px;}
-			#projects {padding-top:50px; padding-bottom:60px; padding-left:16vh; padding-right:16vh; color: #fff; background-color: #4F5D75; font-size: x-large;}
-			#skills {padding-top:50px; padding-bottom:50px; color: #fff; background-color: #8DAA91;}
-			#skills h4{padding-left: 80px;}
-			#skills .row{text-align: left; padding-left: 250px; padding-right: 250px;}
-			#skills p{font-size: 26px;}
-			#skills span{font-size: 20px;}
-			#connect {padding-top:50px; padding-bottom:25px; color: #fff; background-color: #808080;}
-			#end {padding-top:50px; background-color: #222222;}
-
-			a.mail:link {color:#595959;}
-			a.mail:visited {color:#595959;}
-			a.mail:hover {color:#dd4b39;}
-
-			a.linkedin:link {color:#595959;}
-			a.linkedin:visited {color:#595959;}
-			a.linkedin:hover {color:#0077B5;}
-
-			a.github:link {color:#595959;}
-			a.github:visited {color:#595959;}
-			a.github:hover {color:#6e5494;}
-			/*a.github:hover {color:#2f2f2f;}*/
-
-			/* when the screen becomes fully sized for desktop, enable fixed background */
-			@media only screen and (min-width: 992px)
-		  	{
-		  		#home
-		  		{
-		  			background-attachment: fixed;
-		  		}
-		  	}
-
-		  	/* when the screen becomes medium sized, make some formatting changes */
-		  	@media only screen and (max-width: 1312px)
-		  	{
-		  		#skills .row
-		  		{
-		  			padding-left: 85px;
-		  			padding-right: 85px;
-		  		}
-		  	}
-
-		  	/* when the screen becomes small sized for cell phone, change font and indentation for smaller screen */
-		  	@media only screen and (max-width: 768px)
-		  	{
-		  		h1
-		  		{
-		  		    font-size: 65px;
-		  		    padding-left: 0px;
-		  		    padding-right: 0px;
-		  		}
-
-		  		h2
-		  		{
-		  			font-size: 50px;
-		  			padding-left: 0px;
-		  		    padding-right: 0px;
-		  		}
-
-		  		#home span
-		  		{
-		  			padding-bottom: 12vh;
-		  		}
-
-		  		#home h1
-		  		{
-		  			padding-top: 18vh;
-		  		}
-
-		  		#home h5
-		  		{
-		  			padding-top: 12vh;
-		  		}
-
-		  		#photo
-		  		{
-		  			padding-left: 50px;
-		  			padding-right: 50px;
-		  		}
-
-		  		#aboutme
-		  		{
-		  			padding-top: 80px;
-		  		}
-
-		  		#aboutme h2
-		  		{
-		  			text-align: center;
-		  			padding-left: 35px;
-		  		}
-
-		  		#aboutme  p
-		  		{
-		  			font-size: 20px;
-		  			padding-left: 35px;
-		  			padding-right: 35px;
-		  		}
-
-		  		#projects
-		  		{
-		  			font-size: 20px;
-		  			padding-left: 50px;
-		  			padding-right: 50px;
-		  		}
-
-		  		#skills
-		  		{
-		  			padding-left: 35px;
-		  			padding-right: 35px;
-		  		}
-
-		  		#skills h4
-		  		{
-		  			font-size: 27px;
-		  			text-align: center;
-		  			padding-left: 0px;
-		  			padding-right: 0px;
-		  		}
-
-		  		#skills .row
-		  		{
-		  			text-align: left;
-		  			padding-left: 0px;
-		  			padding-right: 0px;
-		  		}
-
-		  		#skills p
-		  		{
-		  			font-size: 20px;
-		  			text-align: center;
-		  		}
-
-		  		#skills span
-		  		{
-		  			font-size: 17px;
-		  		}
-
-		  		#links
-		  		{
-		  			font-size: 20vh;
-		  		}
-		  	}
-
-		  	/* when the screen is the smallest possible size, resize some elements */
-		  	@media only screen and (max-width: 320px)
-		  	{
-		  		h1
-		  		{
-		  		    font-size: 55px;
-		  		}
-
-		  		h2
-		  		{
-		  			font-size: 40px;
-		  		}
-
-		  		h3
-		  		{
-		  			font-size: 35px;
-		  		}
-
-		  		#skills h4
-		  		{
-		  			font-size: 23px;
-		  		}
-		  	}
-
-		</style>
-	</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<html lang="en">
+<head>
+   <title>Joshua Spigelman</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="site_script.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+   <div class="navbar-header">
+   	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
         	<span class="icon-bar"></span>
         	<span class="icon-bar"></span>
         	<span class="icon-bar"></span>
-      	</button>
+      </button>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-    	<ul class="nav navbar-nav">
-        	<li><a href="#home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-      		<li><a href="#aboutme"><span class="glyphicon glyphicon-user"></span> About</a></li>
-      		<li><a href="#projects"><span class="glyphicon glyphicon-folder-open"></span> Projects</a></li>
-      		<li><a href="#skills"><span class="glyphicon glyphicon-list-alt"></span> Skills</a></li>
-      		<li><a href="#connect"><span class="glyphicon glyphicon-link"></span> Connect</a></li>
-      	</ul>
-    </div>
-  </div>
+   <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbar">
+         <ul class="nav navbar-nav">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+      </div>
+   </div>
 </nav>
 
-<div id = "home" class = "container-fluid">
-		<h1>Joshua Spigelman</h1>
-		<h5>Computer Science Engineer</h5>
-		<div id = "option" style = "position: absolute; left: 0; right: 0; bottom: 2vh; font-size: 45px; opacity: 0.4;" align="center">
-			<span class="glyphicon glyphicon-option-horizontal"></span>
-		</div>
+<div id="home" class="container-fluid">
+   <h1>Joshua Spigelman</h1>
+   <h3>Computer Science Engineer</h3>
 </div>
 
-<div id = "aboutme" class = "container-fluid">
-	<div class = "row">
-		<div class = "col-sm-6 vcenter">
-			<img id = "photo" src="pic.png" class="center-block img-circle img-responsive" alt="Picture"></div>
-		<div class = "col-sm-6">
-			<h2 style = "text-align:left;">About Me</h2>
-			<!-- <p>I am a computer science engineer who goes to the University of Michigan in Ann Arbor.</p>
-			<p>I was most recently an intern at Delphi Automotive’s Lab in Mountain View, CA where I worked with the autonomous vehicle team. I have also worked with the Electronics and Safety division of Delphi in Auburn Hills, MI.
-			<p>In my free time, I am a member of an improvisational comedy club that I helped found. I also perform stand-up comedy with my college group.</p> -->
-            <p>My name is Joshua Spigelman. I am a computer science engineer who works at General Motors, in the OnStar department.</p>
-            <p>I graduated magna cum laude from the University of Michigan's College of Engineering in Ann Arbor, Michigan.</p>
-            <p>Currently, I reside in the greater Detroit area in Michigan.</p>
-		</div>
-	</div>
+
+<div id="about" class="container-fluid">
+   <h3>About Me</h3>
+   <div class="row">
+      <div class="col-sm-8">
+         <p>Hello! I'm Josh. I am a developer located in the greater Detroit area in Michigan. I enjoy solving problems, and I have a lot of development experience and a wide variety of skills for getting the job done.</p>
+         <p>I graduated from the University of Michigan College of Engineering in 2017, where I got my degree in Computer Science. I currently work at General Motors. My current position is as an Infotainmnent Architecture Developer in the OnStar department.</p>
+         <p>When I'm not programming, I enjoy reading, stand up comedy, art, puzzles, and games.</p>
+      </div>
+      <div class="col-sm-4">
+          <img src="professional_pic.jpg" class="center-block img-responsive" alt="Joshua Spigelman" height="80%" width="80%">
+      </div>
+   </div>
 </div>
 
-<div id = "projects" class = "container-fluid">
-		<h2>Projects</h2>
-		<dl class="dl-horizontal">
-			<div style="padding-top: 25px;">
-		    <dt style="white-space: normal; ">Botl</span></dt>
-		        <dd>
-                    <p>Botl is a mobile app developed for Android that allows users to leave messages at their current physical location and view messages left by others.</p>
-                    <p><a href='https://play.google.com/store/apps/details?id=com.teamnumberseven.botl&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style="height: 70px;" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a></p>
-                </dd>
-		    </div>
-		    <!-- <div style="padding-top: 25px;">
-		    <dt style = "white-space: normal;">3D Platformer Game</dt>
-		        <dd>A 3D game programmed in Unity. The objective was to create a game where the user can control a character that can move and jump around in a 3D environment with a responsive camera.</dd>
-		    </div>
-		    <div style="padding-top: 25px;">
-		    <dt style = "white-space: normal;">Menu Randomizer</dt>
-		        <dd>An iPhone app developed in Swift. The user can input items that they are deciding between on a restaurant menu. The app randomly chooses one of the items out of those that the user entered. Items that were previously entered can be removed, and new items can be added at will.</dd>
-		    </div> -->
-		</dl>
+
+<div id="projects" class="container-fluid">
+   <h3>Projects</h3>
+   <img src="botl_logo5.png" class="img-responsive" alt="Botl Screenshot" height="250px" width="250px"></img>
+   <h4>Botl</h4>
+   <div>
+      <p>Botl was a location-based messaging app that was designed for Android. It allowed users to leave messages at their current physical location and view messages left by others. People could also comment and rate previous messages.</p>
+      <p>I developed Botl along with a team of fellow students during my senior year at the University of Michigan.</p>
+   </div>
 </div>
 
-<div id = "skills" class = "container-fluid">
-	<h2>Skills</h2>
-	<h4>Languages</h4>
-	<div class="row">
-  		<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Java</p></div>
-    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>C++</p></div>
-    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>MATLAB</p></div>
-    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Python</p></div>
-	</div>
-	<div class="row">
-  		<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>HTML</p></div>
-    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>CSS</p></div>
-    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>PHP</p></div>
-    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>JavaScript</p></div>
-	</div>
-	<div class="row">
-  		<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Swift</p></div>
-    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Perl</p></div>
-    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>C#</p></div>
-    	<div class="col-sm-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>ARM</p></div>
-	</div>
 
-	<h4 style="padding-top: 20px;">Frameworks and Other Programs</h4>
-	<div class="row" style = "padding-bottom: 30px">
-  		<div class="col-md-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Unity</p></div>
-    	<div class="col-md-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>jMonkeyEngine</p></div>
-    	<div class="col-md-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>Blender</p></div>
-    	<div class="col-md-3"><p class="text-nowrap"><span class="glyphicon glyphicon-minus"></span>SolidWorks</p></div>
-	</div>
+<div id="skills" class="container-fluid">
+   <h3>Skills</h3>
+   <div class="row">
+      <div class="col-sm-6">
+         <h5>Programming Skills</h5>
+         <table class="table">
+            <tbody>
+               <tr><td>C++</td></tr>
+               <tr><td>C#</td></tr>
+               <tr><td>Java</td></tr>
+               <tr><td>Python</td></tr>
+               <tr><td>HTML</td></tr>
+               <tr><td>CSS</td></tr>
+               <tr><td>JavaScript</td></tr>
+               <tr><td>jQuery</td></tr>
+               <tr><td>PHP</td></tr>
+               <tr><td>MATLAB</td></tr>
+               <tr><td>Android Studio</td></tr>
+               <tr><td>Unity</td></tr>
+               <tr><td>jMonkeyEngine</td></tr>
+               <tr><td>SQL</td></tr>
+               <tr><td></td></tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="col-sm-6">
+         <h5>Other Computer Skills</h5>
+         <table class="table">
+            <tbody>
+               <tr><td>Blender</td></tr>
+               <tr><td>SolidWorks</td></tr>
+               <tr><td>Microsoft Office</td></tr>
+               <tr><td>Gimp</td></tr>
+               <tr><td>Autodesk Graphic/iDraw</td></tr>
+               <tr><td>Salesforce</td></tr>
+               <tr><td></td></tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
 </div>
 
-<div id = "connect" class = "container-fluid">
-	<h3 style = "border-bottom: 4px solid white; width: 50%; margin: auto;">Connect With Me</h3>
-	<p style = "text-align: center; padding-top: 30px; font-size:26px;">Email: js@joshuaspigelman.com</p>
-	<div style = "text-align: center; padding-top: 20px;">
-		<a class="mail" href="mailto:js@joshuaspigelman.com"><i class="fa fa-envelope" style="font-size: 50px;"></i></a>
-		<a class="linkedin" href="https://www.linkedin.com/in/joshua-spigelman-466417a4" target= "_blank"><i class="fa fa-linkedin-square" style="font-size: 50px;"></i></a>
-		<a class="github" href="https://github.com/Jlspige" target= "_blank"><i class="fa fa-github-square" style="font-size: 50px;"></i></a>
+<div id="contact" class="container-fluid">
+   <h3>Contact Me</h3>
+   <div>
+      <p>Thank you for taking the time to visit my website!</p>
+      <p>If you would like to get in touch with me, I would be happy to hear from you. You can email me at <b>js@joshuaspigelman.com</b> or message me through my LinkedIn page.</p>
+   </div>
+   <div id="buttons">
+		<a class="mail" href="mailto:js@joshuaspigelman.com"><i class="fa fa-envelope"></i></a>
+		<a class="linkedin" href="https://www.linkedin.com/in/joshua-spigelman-466417a4" target= "_blank"><i class="fa fa-linkedin-square"></i></a>
+		<a class="github" href="https://github.com/Jlspige" target= "_blank"><i class="fa fa-github-square"></i></a>
 	</div>
-	<img class="img-responsive center-block" id = "signature" src="whiteSignature400.png" alt="signature" style="padding: 20px 10px 40px 10px">
+   <img class="img-responsive center-block" id = "signature" src="whiteSignature400.png" alt="signature">
 </div>
-
-<div id = "end" class = "container-fluid"></div>
-
-<script>
-//smooth scroll script from http://www.w3schools.com/bootstrap/bootstrap_ref_js_scrollspy.asp
-$(document).ready(function(){
-  // Add scrollspy to <body>
-  $('body').scrollspy({target: ".navbar", offset: 50});
-
-  // Add smooth scrolling on all links inside the navbar
-  $("#myNavbar a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    }  // End if
-  });
-});
-</script>
 
 </body>
 </html>
