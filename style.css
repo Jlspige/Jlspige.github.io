@@ -1,0 +1,100 @@
+h1 {
+   font-size: 90px;
+}
+h2 {
+   font-size: 60px;
+}
+h3 {
+   font-size: 50px;
+}
+h4 {
+   font-size: 35px;
+}
+h5 {
+   font-size: 30px;
+}
+
+#home {
+   height:100vh;
+   background-image: url("keyboard.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   position: relative;
+   color: #fff;
+}
+#home h1 {padding-top: 35vh; text-align: center;}
+#home h3 {padding-top: 7vh; text-align: center;}
+
+#about {
+   /* background-color: #ff8533; */
+   background-color: #04b6f2;
+   color: #fff;
+   font-size: 20px;
+   padding: 100px 100px 100px 100px;
+}
+/* #about h3 {text-align: center;} */
+
+#projects {
+   background-color: #ff5964;
+   color: #fff;
+   font-size: 20px;
+   padding: 100px 100px 100px 100px;
+}
+#projects h3 {text-align: center;}
+#projects h4 {text-align: center;}
+#projects img {
+   margin: 0 auto;
+   padding-top: 17px;
+   padding-bottom: 17px;
+}
+#projects div {
+   margin: 0 auto;
+   max-width: 320px;
+}
+
+#skills {
+   /* background-color: #ff5964; */
+   background-color: #09c655;
+   color: #fff;
+   font-size: 20px;
+   padding: 100px 100px 100px 100px;
+   text-align: center;
+}
+#skills table {
+   width: 500px;
+   margin: auto;
+}
+
+#contact {
+   background-color: #ff8533;
+   color: #fff;
+   font-size: 20px;
+   padding: 100px 100px 100px 100px;
+   text-align: center;
+}
+#contact div {
+   margin: 0 auto;
+   max-width: 700px;
+}
+#contact #buttons {
+   font-size: 50px;
+   padding-bottom: 35px;
+}
+
+a.mail:link {color:#808080;}
+a.mail:visited {color:#808080;}
+a.mail:hover {color:#dd4b39;}
+
+a.linkedin:link {color:#808080;}
+a.linkedin:visited {color:#808080;}
+a.linkedin:hover {color:#0077B5;}
+a.linkedin {
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+a.github:link {color:#808080;}
+a.github:visited {color:#808080;}
+a.github:hover {color:#6e5494;}
