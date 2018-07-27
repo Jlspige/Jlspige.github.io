@@ -19,7 +19,6 @@ h5 {
    background-image: url("keyboard.jpg");
    background-repeat: no-repeat;
    background-position: center;
-   background-attachment: fixed;
    background-size: cover;
    position: relative;
    color: #fff;
@@ -32,7 +31,6 @@ h5 {
    background-color: #04b6f2;
    color: #fff;
    font-size: 20px;
-   padding: 100px 100px 100px 100px;
 }
 /* #about h3 {text-align: center;} */
 
@@ -40,7 +38,6 @@ h5 {
    background-color: #ff5964;
    color: #fff;
    font-size: 20px;
-   padding: 100px 100px 100px 100px;
 }
 #projects h3 {text-align: center;}
 #projects h4 {text-align: center;}
@@ -59,11 +56,10 @@ h5 {
    background-color: #09c655;
    color: #fff;
    font-size: 20px;
-   padding: 100px 100px 100px 100px;
    text-align: center;
 }
 #skills table {
-   width: 500px;
+   max-width: 500px;
    margin: auto;
 }
 
@@ -71,7 +67,6 @@ h5 {
    background-color: #ff8533;
    color: #fff;
    font-size: 20px;
-   padding: 100px 100px 100px 100px;
    text-align: center;
 }
 #contact div {
@@ -98,3 +93,18 @@ a.linkedin {
 a.github:link {color:#808080;}
 a.github:visited {color:#808080;}
 a.github:hover {color:#6e5494;}
+
+
+/* when the screen becomes fully sized for desktop, enable fixed background and add specific padding*/
+@media only screen and (min-width: 992px)
+{
+   #home
+   {
+      background-attachment: fixed;
+   }
+
+   .section
+   {
+      padding: 100px 100px 100px 100px;
+   }
+}
