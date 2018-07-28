@@ -32,7 +32,6 @@ h5 {
    color: #fff;
    font-size: 20px;
 }
-/* #about h3 {text-align: center;} */
 
 #projects {
    background-color: #d1424c;
@@ -116,6 +115,8 @@ a.github:hover {color:#6e5494;}
    {
       padding: 80px 80px 80px 80px;
    }
+
+   #about img {max-width: 400px;}
 }
 
 /* when the screen becomes small sized for cell phone, change font and indentation for smaller screen */
@@ -129,4 +130,5 @@ a.github:hover {color:#6e5494;}
    h1{font-size: 65px;}
    #home h1 {padding-top: 28vh;}
    #home h3{font-size: 30px;}
+   #about img {padding-top: 10px;}
 }
