@@ -28,14 +28,14 @@ h5 {
 
 #about {
    /* background-color: #ff8533; */
-   background-color: #04b6f2;
+   background-color: #10a0d1;
    color: #fff;
    font-size: 20px;
 }
 /* #about h3 {text-align: center;} */
 
 #projects {
-   background-color: #ff5964;
+   background-color: #d1424c;
    color: #fff;
    font-size: 20px;
 }
@@ -107,4 +107,26 @@ a.github:hover {color:#6e5494;}
    {
       padding: 100px 100px 100px 100px;
    }
+}
+
+/* when the screen becomes medium sized, make some formatting changes */
+@media only screen and (max-width: 1312px)
+{
+   .section
+   {
+      padding: 80px 80px 80px 80px;
+   }
+}
+
+/* when the screen becomes small sized for cell phone, change font and indentation for smaller screen */
+@media only screen and (max-width: 768px)
+{
+   .section
+   {
+      padding: 50px 50px 50px 50px;
+   }
+
+   h1{font-size: 65px;}
+   #home h1 {padding-top: 28vh;}
+   #home h3{font-size: 30px;}
 }
